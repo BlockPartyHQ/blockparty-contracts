@@ -13,7 +13,7 @@ pub mod BlockpartyToken {
         balances: Map<ContractAddress, u256>,
         allowances: Map<
             (ContractAddress, ContractAddress), u256
-        >, // Mapping<(owner, spender), amount>
+        >, 
         token_name: ByteArray,
         symbol: ByteArray,
         decimal: u8,

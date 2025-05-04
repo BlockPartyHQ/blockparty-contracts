@@ -48,9 +48,8 @@ fn test_transfer() {
     let recipient = RECIPIENT();
     let sender = SENDER();
 
-    // deployer mints tokens for sender
     start_cheat_caller_address(blockparty_erc20_contract_address, OWNER());
-    // mint to the sender address
+
     let before_balance = blockparty_erc20.balance_of(sender);
     blockparty_erc20.mint(sender, 1000);
     let after_balance = blockparty_erc20.balance_of(sender);
