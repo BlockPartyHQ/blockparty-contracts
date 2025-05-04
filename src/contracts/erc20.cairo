@@ -1,5 +1,5 @@
 #[starknet::contract]
-pub mod BlockPartyToken {
+pub mod BlockpartyToken {
     use core::num::traits::Zero;
     use core::starknet::storage::{
         StoragePointerReadAccess, StoragePointerWriteAccess, Map, StoragePathEntry
@@ -55,7 +55,7 @@ pub mod BlockPartyToken {
     }
 
     #[abi(embed_v0)]
-    impl BlockPartyTokenImpl of IERC20<ContractState> {
+    impl BlockpartyTokenImpl of IERC20<ContractState> {
         fn total_supply(self: @ContractState) -> u256 {
             self.total_supply.read()
         }
